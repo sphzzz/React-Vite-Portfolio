@@ -1,0 +1,115 @@
+.ProductGrid{
+    .ProductBox{
+        .BoxLine{
+            flex: 5;
+            text-align: center;
+
+        }
+        .icon{
+            flex: 1;
+
+            #ProductBelt{
+                height: calc(10rem + 1vh);
+                width: calc(10rem + 1vw);
+            }
+        }
+    }
+}
+
+.ProductItemBox{
+    border-radius: 1rem;
+    .ProductCard{
+        flex: 2;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1rem;
+        
+        .images{
+            position: relative;
+            display: flex;
+            align-items: center;
+            place-content: center;
+            overflow: hidden;
+            width: 100%;
+            &:hover .hoverImageBox {
+                transform: scale(1)
+            }
+
+            &:hover #project{
+                transform: scale(0.8)
+            }
+
+            .image{
+                width: 100%;
+                height: calc(20rem + 1vh);
+                position: relative;
+
+            }
+            .hoverImageBox{
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.145);
+                backdrop-filter: blur(30px);
+                height: calc(20rem + 1vh);
+                width: 100%;
+                top: 0;
+                transform: scale(0);
+                display: flex;
+                place-content: center;
+                place-items: center;
+                z-index: 10;
+                .QR{
+                    height: 15rem;
+                }
+            }
+        }
+    }
+    .ProductDescription{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        place-content: center;
+    }
+}
+
+
+
+@media (width <= 1024px) {
+    .ProductGrid{
+        .ProductBox{
+            .icon{
+                #ProductBelt{
+                    height: calc(5rem + 1vh);
+                    width: calc(5rem + 1vw);
+                }
+            }
+        }
+    }
+    .ProductItemBox{
+        border-radius: none;
+        .ProductCard{
+            display: flex;
+            flex-direction: column;
+
+            .images{
+                .image{
+                    height: inherit;
+                    width: 100%;
+
+                    #project{
+                        height: inherit;
+                        width: 100%;
+                    }
+                }
+                .hoverImageBox{
+                    height: 100%;
+                    width: 100%;
+                    padding: 2rem;
+                    .QR{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }  
+}

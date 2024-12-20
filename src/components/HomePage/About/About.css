@@ -1,0 +1,95 @@
+.AboutMain{
+    padding-top: 3rem;
+    .Upper{
+        border-top: 2px dotted rgba(128, 128, 128, 0.158);
+        padding-inline: 6rem;
+        padding-top: 3rem;
+    }
+
+    .Below{
+        padding: 2rem 6rem;
+        position: relative;
+
+       .Top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .BackToTop{
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            .Button{
+                border-radius:10rem;
+                background-color: black;
+            }
+        }
+       }
+
+       .Message{
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+        h1{
+            text-align: center;
+            color: rgb(174, 174, 174);
+            font-size: calc(10rem + 5vw);
+            font-weight: bold;
+            letter-spacing: -0.5rem;
+            line-height: 12rem;
+        }
+
+       }
+
+       .Contact{
+        .icon{
+            display: flex;
+            gap: 2rem;
+            padding-bottom: 1rem;
+        }
+       }
+    }
+}
+
+@media (width <= 600px) {
+    .AboutMain{
+        .Upper{
+            padding-inline: 1rem;
+            #StepLabel{
+                font-size: 0.6rem;
+            }
+        }
+        .Below{
+            padding: 2rem 1rem;
+            .Message{
+                padding-top: 2rem;
+                h1{
+                    font-size: calc(3rem + 1vw);
+                    font-weight: bold;
+                    letter-spacing: 0rem;
+                    line-height: 6rem;
+                }
+            }
+        }
+    }
+
+    
+}
+
+#topButton{
+    cursor: pointer;
+    a{
+        color: inherit;
+    }
+}
+
+
+@media (width <= 1000px) {
+    #StepLabel{
+        font-size: 0.8rem;
+    }
+}
+  
+  
+
+
+

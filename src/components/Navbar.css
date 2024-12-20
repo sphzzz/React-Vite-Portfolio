@@ -1,0 +1,53 @@
+.NavBarMainGrid{
+    .NavBox{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .IconTitle{
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            img{
+                height: 40px;
+                width: 40px;
+            }
+        }
+
+        .Menus{
+            display: flex;
+            align-items: center;
+            .MenuItem{
+                display: flex;
+            }
+
+        }
+
+    }
+}
+
+.CutomHiddenBox{
+    .MenuItem{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 1rem;
+
+        .button{
+            width: 100%;
+            background-image: linear-gradient(
+                    90deg, 
+                    #6b63ffca 0%,
+                    #6b63ff00 100%);
+            background-size: 0 100%;
+            transition: 0.3s;
+            background-repeat: no-repeat;
+            &:hover{
+                background-size: 100% 100%;
+            }
+
+        }
+    }
+}
