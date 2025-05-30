@@ -1,5 +1,6 @@
 {
   "name": "portfolio-vite-react",
+  "homepage": "https://sphzzz.github.io/React-Vite-Portfolio/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "@emotion/react": "^11.13.5",
@@ -16,6 +19,7 @@
     "@mui/icons-material": "^6.1.10",
     "@mui/material": "^6.1.10",
     "@mui/styled-engine-sc": "^6.1.10",
+    "gh-pages": "^6.3.0",
     "qrcode.react": "^4.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
